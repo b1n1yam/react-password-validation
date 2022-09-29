@@ -20,7 +20,7 @@ function Copyright() {
       {"Copyright © "}
       <Link
         color="inherit"
-        href="https://github.com/exeligent/react-password-validation"
+        href="https://github.com/b1n1yam/react-password-validation"
       >
         Biniyam Daniel
       </Link>{" "}
@@ -41,7 +41,7 @@ export default class App extends Component {
     if (txt.length < 8) {
       this.setState({ error: "Password must be atleast 8 characters" });
     } else if (txt.length > 16) {
-      //show error m
+      //show error
       this.setState({ error: "Password exceeds max length" });
     }
     if (txt.length > 7 && txt.length < 17) {
@@ -110,7 +110,7 @@ export default class App extends Component {
         <CssBaseline />
         <div style={Styles.paper}>
           <Typography component="h1" variant="h5">
-            Programming Challenge: Password Validation
+            React Password Validation
           </Typography>
 
           <form style={Styles.form} noValidate>
